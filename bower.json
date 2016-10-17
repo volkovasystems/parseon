@@ -1,5 +1,6 @@
 {
   "name": "parseon",
+  "version": "0.0.0",
   "description": "Re-parse JSON back and forth.",
   "main": "parseon.js",
   "authors": [
