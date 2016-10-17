@@ -1,0 +1,24 @@
+{
+  "name": "parseon",
+  "description": "Re-parse JSON back and forth.",
+  "main": "parseon.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "re-parse",
+    "parse",
+    "stringify",
+    "validate",
+    "json"
+  ],
+  "homepage": "https://github.com/volkovasystems/parseon",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

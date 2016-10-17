@@ -1,0 +1,26 @@
+{
+  "name": "parseon",
+  "version": "0.0.0",
+  "description": "Re-parse JSON back and forth.",
+  "main": "parseon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/parseon.git"
+  },
+  "keywords": [
+    "re-parse",
+    "parse",
+	"stringify",
+    "validate",
+    "json"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/parseon/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/parseon#readme"
+}
