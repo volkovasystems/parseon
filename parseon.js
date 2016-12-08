@@ -46,7 +46,10 @@
 	@end-module-documentation
 */
 
-var parseon = function parseon( object ){
+const krumb = require( "krumb" );
+const protype = require( "protype" );
+
+const parseon = function parseon( object ){
 	/*;
 		@meta-configuration:
 			{
@@ -58,22 +61,23 @@ var parseon = function parseon( object ){
 		@end-meta-configuration
 	*/
 
+	let objectType = protype( object );
+	if( !objectType.OBJECT && !objectType.STRING ){
+		throw new Error( "invalid object" );
+	}
+
 	try{
-		if( typeof object == "object" ){
-			return JSON.parse( JSON.stringify( object ) );
+		if( objectType.OBJECT ){
+			return JSON.parse( JSON.stringify( krumb( object ) ) );
+		}
 
-		}else if( typeof object == "string" ){
+		if( objectType.STRING ){
 			return JSON.parse( object );
-
-		}else{
-			throw new Error( "invalid object" );
 		}
 
 	}catch( error ){
-		throw new Error( "error re-parsing json object, " + error.message );
+		throw new Error( `error re-parsing json object, ${ error }` );
 	}
 };
 
-if( typeof module != "undefined" ){
-	module.exports = parseon;
-}
+module.exports = parseon;

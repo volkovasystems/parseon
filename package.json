@@ -1,6 +1,6 @@
 {
   "name": "parseon",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Re-parse JSON back and forth.",
   "main": "parseon.js",
   "scripts": {
@@ -13,7 +13,7 @@
   "keywords": [
     "re-parse",
     "parse",
-	"stringify",
+    "stringify",
     "validate",
     "json"
   ],
@@ -22,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/volkovasystems/parseon/issues"
   },
-  "homepage": "https://github.com/volkovasystems/parseon#readme"
+  "homepage": "https://github.com/volkovasystems/parseon#readme",
+  "dependencies": {
+    "krumb": "0.0.0",
+    "protype": "^0.4.0"
+  }
 }
