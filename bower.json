@@ -1,8 +1,8 @@
 {
   "name": "parseon",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Re-parse JSON back and forth.",
-  "main": "parseon.js",
+  "main": "parseon.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
   ],
@@ -23,7 +23,7 @@
     "tests"
   ],
   "dependencies": {
-    "krumb": "*",
-    "protype": "^0.4.0"
+    "krumb": "^0.1.0",
+    "protype": "^0.11.0"
   }
 }
