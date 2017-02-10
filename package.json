@@ -1,6 +1,6 @@
 {
   "name": "parseon",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Re-parse JSON back and forth.",
   "main": "parseon.js",
   "support": "parseon.support.js",
@@ -29,8 +29,9 @@
   "homepage": "https://github.com/volkovasystems/parseon#readme",
   "dependencies": {
     "babel-runtime": "^6.22.0",
+    "circular-json": "^0.3.1",
     "krumb": "^0.1.0",
-    "protype": "^0.11.0"
+    "protype": "^0.15.0"
   },
   "devDependencies": {
     "babel-cli": "^6.22.2",

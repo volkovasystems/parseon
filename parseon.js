@@ -44,8 +44,17 @@
 	@module-documentation:
 		Re-parse JSON back and forth.
 	@end-module-documentation
+
+	@include:
+		{
+			"json": "circular-json",
+			"krumb": "krumb",
+			"protype": "protype"
+		}
+	@end-include
 */
 
+const json = require( "circular-json" );
 const krumb = require( "krumb" );
 const protype = require( "protype" );
 
@@ -68,15 +77,15 @@ const parseon = function parseon( object ){
 
 	try{
 		if( type.OBJECT ){
-			return JSON.parse( JSON.stringify( krumb( object ) ) );
+			return json.parse( json.stringify( krumb( object ) ) );
 		}
 
 		if( type.STRING ){
-			return JSON.parse( object );
+			return json.parse( object );
 		}
 
 	}catch( error ){
-		throw new Error( `error re-parsing json object, ${ error }` );
+		throw new Error( `error re-parsing json object, ${ error.stack }` );
 	}
 };
 
