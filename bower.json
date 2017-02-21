@@ -1,10 +1,12 @@
 {
   "name": "parseon",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Re-parse JSON back and forth.",
   "main": "parseon.deploy.js",
+  "support": "parseon.support.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -24,7 +26,7 @@
   ],
   "dependencies": {
     "circular-json": "^0.3.1",
-    "krumb": "^0.1.0",
-    "protype": "^0.15.0"
+    "krumb": "^0.2.0",
+    "protype": "^0.17.0"
   }
 }

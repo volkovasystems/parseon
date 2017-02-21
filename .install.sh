@@ -16,4 +16,5 @@ bower install \
 circular-json \
 krumb \
 protype \
---save
+--save \
+--force-latest
