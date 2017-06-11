@@ -1,5 +1,7 @@
-"use strict";
 
+const assert = require( "assert" );
 const parseon = require( "./parseon.js" );
 
-console.log( parseon( { "name": "simple" } ) );
+assert.ok( parseon( global ) );
+
+console.log( "ok" );

@@ -1,7 +1,9 @@
 yarn add \
 babel-runtime \
-circular-json \
+falzy \
+jnfy \
 krumb \
+parsfy \
 protype \
 --save && \
 yarn add \
@@ -13,8 +15,10 @@ source-map-loader \
 webpack \
 --dev && \
 bower install \
-circular-json \
+falzy \
+jnfy \
 krumb \
+parsfy \
 protype \
 --save \
 --force-latest

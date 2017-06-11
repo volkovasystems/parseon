@@ -47,15 +47,19 @@
 
 	@include:
 		{
-			"json": "circular-json",
+			"falzy": "falzy",
+			"jnfy": "jnfy",
 			"krumb": "krumb",
+			"parsfy": "parsfy",
 			"protype": "protype"
 		}
 	@end-include
 */
 
-const json = require( "circular-json" );
+const falzy = require( "falzy" );
+const jnfy = require( "jnfy" );
 const krumb = require( "krumb" );
+const parsfy = require( "parsfy" );
 const protype = require( "protype" );
 
 const parseon = function parseon( object ){
@@ -70,22 +74,19 @@ const parseon = function parseon( object ){
 		@end-meta-configuration
 	*/
 
-	let type = protype( object );
-	if( !type.OBJECT && !type.STRING ){
+	if( falzy( object ) ){
 		throw new Error( "invalid object" );
 	}
 
 	try{
-		if( type.OBJECT ){
-			return json.parse( json.stringify( krumb( object ) ) );
+		if( protype( object, OBJECT ) ){
+			return parsfy( jnfy( krumb( object ) ) );
 		}
 
-		if( type.STRING ){
-			return json.parse( object );
-		}
+		return parsfy( object );
 
 	}catch( error ){
-		throw new Error( `error re-parsing json object, ${ error.stack }` );
+		throw new Error( `cannot re-parse json object, ${ error.stack }` );
 	}
 };
 
