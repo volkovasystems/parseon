@@ -35,6 +35,9 @@
 			"module": "parseon",
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"repository": "https://github.com:volkovasystems/parseon.git",
 			"test": "parseon-test.js",
 			"global": true
