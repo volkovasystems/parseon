@@ -1461,9 +1461,9 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-jnfy@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/jnfy/-/jnfy-0.0.0.tgz#9eaa36272eab96a87504b07c59888e395cbf6c75"
+jnfy@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/jnfy/-/jnfy-0.1.0.tgz#52e7b587da68242246d1380ae028ce0b8ed8c461"
   dependencies:
     babel-runtime "^6.23.0"
     circular-json "^0.3.1"
@@ -1539,9 +1539,9 @@ kount@^0.11.0:
   dependencies:
     babel-runtime "^6.23.0"
 
-krumb@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/krumb/-/krumb-0.4.0.tgz#066c067301a07694816f106e9931da0eb7e8c8d0"
+krumb@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/krumb/-/krumb-0.5.0.tgz#bb454db2cbb3d0efac51f242e87b3f6a46975f47"
   dependencies:
     babel-runtime "^6.23.0"
 
@@ -1830,9 +1830,9 @@ parse-json@^2.2.0:
   dependencies:
     error-ex "^1.2.0"
 
-parsfy@^0.0.0:
-  version "0.0.0"
-  resolved "https://registry.yarnpkg.com/parsfy/-/parsfy-0.0.0.tgz#09c276801b0256e276155e64d8057c57f19cc571"
+parsfy@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/parsfy/-/parsfy-0.1.0.tgz#10d464f4512948735b90b0328dd6804e9b833881"
   dependencies:
     babel-runtime "^6.23.0"
     circular-json "^0.3.1"
