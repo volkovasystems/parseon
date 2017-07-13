@@ -36,7 +36,8 @@
 			"author": "Richeve S. Bebedor",
 			"eMail": "richeve.bebedor@gmail.com",
 			"contributors": [
-				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+				"Vinse Vinalon <vinsevinalon@gmail.com>"
 			],
 			"repository": "https://github.com:volkovasystems/parseon.git",
 			"test": "parseon-test.js",
@@ -53,8 +54,7 @@
 			"falzy": "falzy",
 			"jnfy": "jnfy",
 			"krumb": "krumb",
-			"parsfy": "parsfy",
-			"protype": "protype"
+			"parsfy": "parsfy"
 		}
 	@end-include
 */
@@ -63,7 +63,6 @@ const falzy = require( "falzy" );
 const jnfy = require( "jnfy" );
 const krumb = require( "krumb" );
 const parsfy = require( "parsfy" );
-const protype = require( "protype" );
 
 const parseon = function parseon( object ){
 	/*;
@@ -82,7 +81,7 @@ const parseon = function parseon( object ){
 	}
 
 	try{
-		if( protype( object, OBJECT ) ){
+		if( typeof object == "object" ){
 			return parsfy( jnfy( krumb( object ) ) );
 		}
 

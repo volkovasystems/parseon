@@ -36,7 +36,8 @@
               			"author": "Richeve S. Bebedor",
               			"eMail": "richeve.bebedor@gmail.com",
               			"contributors": [
-              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+              				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+              				"Vinse Vinalon <vinsevinalon@gmail.com>"
               			],
               			"repository": "https://github.com:volkovasystems/parseon.git",
               			"test": "parseon-test.js",
@@ -53,17 +54,15 @@
               			"falzy": "falzy",
               			"jnfy": "jnfy",
               			"krumb": "krumb",
-              			"parsfy": "parsfy",
-              			"protype": "protype"
+              			"parsfy": "parsfy"
               		}
               	@end-include
-              */
+              */var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var falzy = require("falzy");
 var jnfy = require("jnfy");
 var krumb = require("krumb");
 var parsfy = require("parsfy");
-var protype = require("protype");
 
 var parseon = function parseon(object) {
 	/*;
@@ -82,7 +81,7 @@ var parseon = function parseon(object) {
 	}
 
 	try {
-		if (protype(object, OBJECT)) {
+		if ((typeof object === "undefined" ? "undefined" : (0, _typeof3.default)(object)) == "object") {
 			return parsfy(jnfy(krumb(object)));
 		}
 

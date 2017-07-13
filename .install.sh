@@ -4,7 +4,6 @@ falzy \
 jnfy \
 krumb \
 parsfy \
-protype \
 --save && \
 yarn add \
 babel-cli \
@@ -19,6 +18,5 @@ falzy \
 jnfy \
 krumb \
 parsfy \
-protype \
 --save \
 --force-latest
