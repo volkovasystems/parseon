@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>parseon unit test</title>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Parseon QUnit test</title>
-	<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
-	<script src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-	<script type="application/javascript" src="./parseon.deploy.js"></script>
-</head>
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
 
-<body>
-	<div id="qunit"></div>
-	<div id="qunit-fixture"></div>
-	<script>
-		QUnit.test( "equal test", function( assert ) {
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
 
-			assert.ok( parseon( window ) );
-			assert.deepEqual( parseon( { } ), { }, "should be equal" );
+		<script type="application/javascript" src="./parseon.deploy.js"></script>
+	</head>
 
-		} );
-	</script>
-</body>
+	<body>
+		<div id="qunit"></div>
 
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "parseon unit test", function( assert ) {
+
+				assert.equal( typeof parseon( window ), "object", "should be typeof object" );
+
+				assert.deepEqual( parseon( { } ), { }, "should be equal" );
+
+			} );
+		</script>
+	</body>
 </html>
