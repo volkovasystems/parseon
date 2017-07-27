@@ -1,49 +1,54 @@
 {
-  "name": "parseon",
-  "version": "0.9.0",
-  "description": "Re-parse JSON back and forth.",
-  "main": "parseon.js",
-  "support": "parseon.support.js",
-  "deploy": "parseon.deploy.js",
-  "browser": "parseon.deploy.js",
-  "scripts": {
-    "build": "babel parseon.js --out-file parseon.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha parseon-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/parseon.git"
-  },
-  "keywords": [
-    "re-parse",
-    "parse",
-    "stringify",
-    "validate",
-    "json"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/parseon/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/parseon#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "falzy": "^0.20.0",
-    "jnfy": "^0.2.0",
-    "krumb": "^0.5.0",
-    "parsfy": "^0.1.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^3.2.0"
-  }
+	"name": "parseon",
+	"version": "0.10.0",
+	"description": "Re-parse JSON back and forth.",
+	"main": "parseon.js",
+	"support": "parseon.support.js",
+	"deploy": "parseon.deploy.js",
+	"browser": "parseon.deploy.js",
+	"scripts": {
+		"build": "babel parseon.js --out-file parseon.support.js --source-maps && webpack --progress --display-modules",
+		"pristine": "rsetmod clean && flxc execute ./.install.sh",
+		"clear": "rsetmod clean --clear",
+		"formal": "jesy apply '*.json'",
+		"pretest": "npm run clear && npm run build",
+		"test": "node parseon-test.js",
+		"posttest": "npm run formal"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/parseon.git"
+	},
+	"keywords": [
+		"re-parse",
+		"parse",
+		"stringify",
+		"validate",
+		"json"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/parseon/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/parseon#readme",
+	"dependencies": {
+		"babel-runtime": "^6.25.0",
+		"falzy": "^0.23.0",
+		"jnfy": "^0.3.0",
+		"krumb": "^0.6.0",
+		"parsfy": "^0.2.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.4.1"
+	}
 }

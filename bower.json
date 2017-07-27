@@ -1,34 +1,34 @@
 {
-  "name": "parseon",
-  "version": "0.9.0",
-  "description": "Re-parse JSON back and forth.",
-  "main": "parseon.deploy.js",
-  "support": "parseon.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "re-parse",
-    "parse",
-    "stringify",
-    "validate",
-    "json"
-  ],
-  "homepage": "https://github.com/volkovasystems/parseon",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "falzy": "^0.20.0",
-    "jnfy": "^0.2.0",
-    "krumb": "^0.5.0",
-    "parsfy": "^0.1.0"
-  }
+	"name": "parseon",
+	"version": "0.10.0",
+	"description": "Re-parse JSON back and forth.",
+	"main": "parseon.deploy.js",
+	"support": "parseon.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"re-parse",
+		"parse",
+		"stringify",
+		"validate",
+		"json"
+	],
+	"homepage": "https://github.com/volkovasystems/parseon",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"falzy": "^0.23.0",
+		"jnfy": "^0.3.0",
+		"krumb": "^0.6.0",
+		"parsfy": "^0.2.0"
+	}
 }
