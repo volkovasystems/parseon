@@ -18,9 +18,9 @@
 		<script type="application/javascript">
 			QUnit.test( "parseon unit test", function( assert ) {
 
-				assert.equal( typeof parseon( window ), "object", "should be typeof object" );
+				assert.equal( typeof parseon( window ), "object", "should be equal to 'object'" );
 
-				assert.deepEqual( parseon( { } ), { }, "should be equal" );
+				assert.deepEqual( parseon( { "name": "bogus" } ), { "name": "bogus" }, "should be equal to { 'name': 'bogus' }" );
 
 			} );
 		</script>
