@@ -24,11 +24,5 @@
 		"bower_components",
 		"test",
 		"tests"
-	],
-	"dependencies": {
-		"falzy": "^0.23.0",
-		"jnfy": "^0.3.0",
-		"krumb": "^0.6.0",
-		"parsfy": "^0.2.0"
-	}
+	]
 }
