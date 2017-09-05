@@ -67,27 +67,77 @@ const path = require( "path" );
 
 
 //: @server:
-
 describe( "parseon", ( ) => {
 
-} );
+	describe( "`parseon( global )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			assert.equal( typeof parseon( global ), "object" );
+		} );
+	} );
 
+	describe( "`parseon( JSON.stringify( { 'name': 'bogus' } ) )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			assert.equal( typeof parseon( JSON.stringify( { "name": "bogus" } ) ), "object" );
+		} );
+	} );
+
+} );
 //: @end-server
 
 
 //: @client:
-
 describe( "parseon", ( ) => {
 
-} );
+	describe( "`parseon( window )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			assert.equal( typeof parseon( window ), "object" );
+		} );
+	} );
 
+	describe( "`parseon( JSON.stringify( { 'name': 'bogus' } ) )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			assert.equal( typeof parseon( JSON.stringify( { "name": "bogus" } ) ), "object" );
+		} );
+	} );
+
+} );
 //: @end-client
 
 
 //: @bridge:
-
 describe( "parseon", ( ) => {
 
-} );
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
+	describe( "`parseon( window )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof parseon( window );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, "object" );
+		} );
+	} );
+
+	describe( "`parseon( JSON.stringify( { 'name': 'bogus' } ) )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return typeof parseon( JSON.stringify( { "name": "bogus" } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, "object" );
+		} );
+	} );
+
+} );
 //: @end-bridge

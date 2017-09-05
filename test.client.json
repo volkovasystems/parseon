@@ -1,0 +1,116 @@
+{
+	"state": {
+		"passed": 2,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-09-05T11:37:03.234Z",
+	"end": "2017-09-05T11:37:44.423Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "parseon",
+			"duration": 0,
+			"start": "2017-09-05T11:37:44.058Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "parseon",
+			"duration": 187,
+			"start": "2017-09-05T11:37:44.059Z",
+			"end": "2017-09-05T11:37:44.246Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-09-05T11:37:44.060Z",
+					"end": "2017-09-05T11:37:44.060Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "parseon",
+					"associatedTest": "should re-parse JSON back and forth"
+				},
+				{
+					"start": "2017-09-05T11:37:44.160Z",
+					"end": "2017-09-05T11:37:44.160Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "parseon",
+					"associatedTest": "should re-parse JSON back and forth"
+				},
+				{
+					"start": "2017-09-05T11:37:44.160Z",
+					"end": "2017-09-05T11:37:44.160Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "parseon",
+					"associatedTest": "should re-parse JSON back and forth"
+				},
+				{
+					"start": "2017-09-05T11:37:44.245Z",
+					"end": "2017-09-05T11:37:44.246Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "parseon",
+					"associatedTest": "should re-parse JSON back and forth"
+				},
+				{
+					"start": "2017-09-05T11:37:44.246Z",
+					"end": "2017-09-05T11:37:44.246Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "parseon"
+				}
+			]
+		},
+		{
+			"name": "`parseon( window )`",
+			"duration": 101,
+			"start": "2017-09-05T11:37:44.059Z",
+			"end": "2017-09-05T11:37:44.160Z",
+			"tests": [
+				{
+					"name": "should re-parse JSON back and forth",
+					"start": "2017-09-05T11:37:44.060Z",
+					"end": "2017-09-05T11:37:44.160Z",
+					"duration": 100,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`parseon( JSON.stringify( { 'name': 'bogus' } ) )`",
+			"duration": 86,
+			"start": "2017-09-05T11:37:44.160Z",
+			"end": "2017-09-05T11:37:44.246Z",
+			"tests": [
+				{
+					"name": "should re-parse JSON back and forth",
+					"start": "2017-09-05T11:37:44.160Z",
+					"end": "2017-09-05T11:37:44.245Z",
+					"duration": 85,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

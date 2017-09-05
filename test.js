@@ -63,11 +63,21 @@ const parseon = require( "./parseon.js" );
 
 
 //: @server:
-
 describe( "parseon", ( ) => {
 
-} );
+	describe( "`parseon( global )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			assert.equal( typeof parseon( global ), "object" );
+		} );
+	} );
 
+	describe( "`parseon( JSON.stringify( { 'name': 'bogus' } ) )`", ( ) => {
+		it( "should re-parse JSON back and forth", ( ) => {
+			assert.equal( typeof parseon( JSON.stringify( { "name": "bogus" } ) ), "object" );
+		} );
+	} );
+
+} );
 //: @end-server
 
 
